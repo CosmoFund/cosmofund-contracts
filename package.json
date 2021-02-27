@@ -1,5 +1,5 @@
 {
-  "name": "@cosmofund/cosmofund-contract",
+  "name": "@cosmofund/cosmofund",
   "version": "1.0.0",
   "description": "CosmoFund Contract",
   "license": "MIT",
@@ -13,13 +13,13 @@
     "precompile": "yarn clean",
     "compile": "truffle compile"
   },
-  "homepage": "https://github.com/CosmoFund/cosmofund-contract#readme",
+  "homepage": "https://github.com/CosmoFund/cosmofund-contracts#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CosmoFund/cosmofund-contract.git"
+    "url": "https://github.com/CosmoFund/cosmofund-contracts.git"
   },
   "bugs": {
-    "url": "https://github.com/CosmoFund/cosmofund-contract/issues",
+    "url": "https://github.com/CosmoFund/cosmofund-contracts/issues",
     "email": "support@CosmoFund.space"
   },
   "files": [

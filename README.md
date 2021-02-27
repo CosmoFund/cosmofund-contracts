@@ -16,9 +16,9 @@ npm install @cosmofund/cosmofund
 
 ### Usage
 ```js
-const CosmoFund = require('@cosmofund/cosmofund-contract/abi/CosmoFund.json');
+const CosmoFund = require('@cosmofund/cosmofund/abi/CosmoFund.json');
 // or
-import CosmoFund from '@cosmofund/cosmofund-contract/abi/CosmoFund.json';
+import CosmoFund from '@cosmofund/cosmofund/abi/CosmoFund.json';
 ```
 
 
