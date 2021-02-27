@@ -1,0 +1,48 @@
+{
+  "name": "@cosmofund/cosmofund-contract",
+  "version": "1.0.0",
+  "description": "CosmoFund Contract",
+  "license": "MIT",
+  "author": {
+    "name": "CosmoFund",
+    "email": "support@CosmoFund.space",
+    "url": "https://www.CosmoFund.space"
+  },
+  "scripts": {
+    "clean": "rimraf ./abi/",
+    "precompile": "yarn clean",
+    "compile": "truffle compile"
+  },
+  "homepage": "https://github.com/CosmoFund/cosmofund-contract#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CosmoFund/cosmofund-contract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CosmoFund/cosmofund-contract/issues",
+    "email": "support@CosmoFund.space"
+  },
+  "files": [
+    "contracts",
+    "abi"
+  ],
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "truffle": "^5.1.59"
+  },
+  "keywords": [
+    "Ethereum",
+    "NFT",
+    "Cosmo",
+    "CosmoFund",
+    "сontract",
+    "ABI"
+  ],
+  "contributors": [
+    {
+      "name": "Aleksandr Ivannikov",
+      "email": "dev@an-ivannikov.com",
+      "url": "https://an-ivannikov.com/"
+    }
+  ]
+}
