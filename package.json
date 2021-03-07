@@ -1,6 +1,6 @@
 {
   "name": "@cosmofund/cosmofund",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CosmoFund Contract",
   "license": "MIT",
   "author": {
@@ -9,7 +9,7 @@
     "url": "https://www.CosmoFund.space"
   },
   "scripts": {
-    "clean": "rimraf ./abi/",
+    "clean": "rimraf ./build/",
     "precompile": "yarn clean",
     "compile": "truffle compile"
   },
@@ -24,7 +24,7 @@
   },
   "files": [
     "contracts",
-    "abi"
+    "build"
   ],
   "devDependencies": {
     "rimraf": "^3.0.2",

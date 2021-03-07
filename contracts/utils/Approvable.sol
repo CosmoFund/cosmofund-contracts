@@ -169,7 +169,6 @@ abstract contract Approvable is Context {
     function _grantApprover(address account, uint256 weight) private returns (bool) {
         if (_approvers.add(account)) {
             _changeApproverWeight(account, weight);
-            _setTotalWeight(_totalWeight.add(weight));
             emit ApproverGranted(account);
             return true;
         }
@@ -275,7 +274,6 @@ abstract contract Approvable is Context {
         require(newTotalWeight >= _threshold, "Approvable: The threshold is greater than new totalWeight");
         if (_approvers.remove(account)) {
             _changeApproverWeight(account, 0);
-            _setTotalWeight(newTotalWeight);
             emit ApproverRevoked(account);
             return true;
         }
