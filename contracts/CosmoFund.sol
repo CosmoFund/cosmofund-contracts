@@ -81,9 +81,9 @@ contract CosmoFund is Approvable {
     }
 
     function executeTransfer(uint256 id) public onlyApprover returns (bool) {
-        if (_transfers[id].approvalsWeight >= getThreshold())
-            return _executeTransfer(id);
-        return false;
+        require(_transfers[id].executed == false, "CosmoFund: Transfer has already executed");
+        require(_transfers[id].approvalsWeight >= getThreshold(), "CosmoFund: Insufficient approvals weight");
+        return _executeTransfer(id);
     }
 
     function _addNewTransfer(address token, uint256 amount, address payable to) private returns (uint256) {
