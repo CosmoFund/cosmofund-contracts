@@ -3,7 +3,7 @@ CosmoFund WEB Site: [www.CosmoFund.space](https://www.CosmoFund.space/).
 
 
 ## Verified Smart Contracts:
-- [CosmoFund](https://etherscan.io/address/0x927E6194b23054daAFf0157E7C3e6787b63036bf).
+- [CosmoFund](https://etherscan.io/address/).
 
 
 ## Usage CosmoFund Smart Contract
@@ -16,9 +16,9 @@ npm install @cosmofund/cosmofund
 
 ### Usage
 ```js
-const CosmoFund = require('@cosmofund/cosmofund/abi/CosmoFund.json');
+const CosmoFund = require('@cosmofund/cosmofund/build/CosmoFund.json');
 // or
-import CosmoFund from '@cosmofund/cosmofund/abi/CosmoFund.json';
+import CosmoFund from '@cosmofund/cosmofund/build/CosmoFund.json';
 ```
 
 
