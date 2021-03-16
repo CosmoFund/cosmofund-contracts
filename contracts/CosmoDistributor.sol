@@ -71,12 +71,12 @@ contract CosmoDistributor {
         address msgSender = _msgSender();
         _owner = msgSender;
         emit OwnershipTransferred(address(0), msgSender);
-        setupPredefinedBeneficiaries();
+        setup();
     }
 
-    function setupPredefinedBeneficiaries() internal {
+    function setup() internal {
         vestedAmount[0xB2F8234571eEF9B222DEca1307A03c6c2E376b73] = 1800000000e18;
-        vestedAmount[] = 18000000e18;
+        vestedAmount[0x3A7F0d57928d7dCE60E11470e528c47CF5084f33] = 18000000e18;
     }
 
     /**
